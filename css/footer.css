@@ -1,0 +1,29 @@
+#footer{
+    margin-top: 20px;
+}
+#footer>.container{
+    /* padding: 45px 0px; */
+    padding-top: 45px;
+    padding-bottom: 90px;
+    /* border-top: 2px solid var(--light); */
+}
+
+.copyright-info{
+    float:left;
+    font-size: 15px;
+    color: var(--dark);
+}
+.designed-info{
+    float:right;
+    font-size: 15px;
+    color: var(--dark);
+}
+.designed-info em{
+    /* font-style: normal;
+    font-size: 12px; */
+    font-weight: 700;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--dark);
+    
+}
