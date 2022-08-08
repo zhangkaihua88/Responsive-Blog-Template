@@ -1,7 +1,46 @@
-.aside-box {
-    display: inline-block;
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 22.5px;
-    padding: 25px;
+.profile-img img{
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+}
+.profile-name{
+    display: block;
+    text-align: center;
+    font-size: 22.5px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+.profile-slogan{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.profile-info{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+.profile-info>div{
+    margin: 0 5.625px;
+    color: var(--dark);
+    text-align: center;
+}
+
+.profile-info>div>div:first-child{
+    display: block;
+    font-size: 22.5px;
+    color: var(--dark);
+}
+.profile-info>div>div:last-child{
+    display: block;
+    font-size: 13.5px;
+    color: var(--dark);
 }
