@@ -1,11 +1,16 @@
-.profile-img img{
+.profile-img img {
     display: block;
     width: 96px;
     height: 96px;
-    margin: 0 auto 15px;
+    margin: 0 auto;
     border-radius: 50%;
 }
-.profile-name{
+
+.profile-img {
+    margin-bottom: 15px;
+}
+
+.profile-name {
     display: block;
     text-align: center;
     font-size: 22.5px;
@@ -13,7 +18,8 @@
     margin-bottom: 15px;
     color: var(--dark);
 }
-.profile-slogan{
+
+.profile-slogan {
     display: block;
     text-align: center;
     font-size: 15px;
@@ -22,25 +28,85 @@
     margin-bottom: 15px;
 }
 
-.profile-info{
+.profile-info {
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
     justify-content: space-between;
 }
-.profile-info>div{
+
+.profile-info>div {
     margin: 0 5.625px;
     color: var(--dark);
     text-align: center;
 }
 
-.profile-info>div>div:first-child{
+.profile-info>div>div:first-child {
     display: block;
     font-size: 22.5px;
     color: var(--dark);
 }
-.profile-info>div>div:last-child{
+
+.profile-info>div>div:last-child {
     display: block;
     font-size: 13.5px;
     color: var(--dark);
+}
+
+
+.aside-list dt,
+.tags dt {
+    margin-bottom: 15px;
+    color: var(--dark-light);
+    font-size: 13.5px;
+    line-height: 20.25px;
+    width: 100%;
+}
+
+.aside-list a {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 10.5px;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: var(--dark);
+}
+
+.aside-list span {
+    display: block;
+    height: 16.875px;
+    padding: 1.125px 8.4375px;
+    font-size: 12px;
+    /* line-height: 18px; */
+    background-color: var(--hover-bg);
+    border-radius: 7.5px;
+}
+
+.aside-list a:hover {
+    background-color: var(--hover-bg);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tags dd {
+    margin: 3px 7.5px 3px 3px;
+}
+
+.tags a {
+    /* background-color: pink; */
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.tags a::before{
+    content: "# ";
+}
+.tags a:hover {
+    color: var(--link-hover);
+    border-bottom: 1px solid var(--link-hover);
 }
