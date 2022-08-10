@@ -1,3 +1,10 @@
+.aside-left-item,
+.aside-right-item {
+    position: sticky;
+    top: 0;
+}
+
+
 .profile-img img {
     display: block;
     width: 96px;
@@ -55,7 +62,8 @@
 
 
 .aside-list dt,
-.tags dt {
+.tags dt,
+.recent-post dt {
     margin-bottom: 15px;
     color: var(--dark-light);
     font-size: 13.5px;
@@ -103,10 +111,39 @@
     line-height: 28px;
 }
 
-.tags a::before{
+.tags a::before {
     content: "# ";
 }
+
 .tags a:hover {
     color: var(--link-hover);
     border-bottom: 1px solid var(--link-hover);
+}
+
+.recent-post dd {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+
+    font-size: 13.5px;
+    line-height: 20.25px;
+    color: var(--dark)
+}
+
+.recent-post a {
+    color: var(--dark);
+}
+
+.recent-post a:hover {
+    color: var(--link-hover);
+    border-bottom: 1px solid var(--link-hover);
+
+}
+
+.recent-post dd:first-of-type {
+    padding-top: 0px;
+}
+
+.recent-post dd:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
 }
